@@ -4,3 +4,7 @@
 
 [build.environment]
   CI = "false"
+
+[context.production]
+  command = "CI=false npm run build"
+
