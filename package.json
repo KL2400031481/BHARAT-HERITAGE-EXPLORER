@@ -43,8 +43,10 @@
     "swiper": "^11.1.1",
     "web-vitals": "^2.1.4"
   },
+  
   "scripts": {
-    "prebuild": "npm install --legacy-peer-deps",
+  "prebuild": "npm install --legacy-peer-deps",
+  "postinstall": "node ./scripts/check-install.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -74,4 +76,5 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
+  
 }
