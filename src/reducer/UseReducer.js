@@ -74,8 +74,6 @@ export const initialState = {
         };
       case 'UPDATE_DETAILS':
         return { ...state, details: { ...state.details, ...action.payload } };
-      case 'UPDATE_ALERT':
-        return { ...state, alert: action.payload };
       case 'UPDATE_USER':
         localStorage.setItem('currentUser', JSON.stringify(action.payload));
         return { ...state, currentUser: action.payload };

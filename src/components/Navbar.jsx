@@ -1,13 +1,12 @@
-import React, { useState, useEffect,useContext } from "react";
+import React, { useState, useEffect } from "react";
 import "./css/navbar.css";
 import logo from '../assets/logoN.png';
 
-import { NavLink, useHistory, useLocation} from "react-router-dom";
+import { NavLink, useHistory, useLocation } from "react-router-dom";
 import { useValue } from "../App";
 import UserIcons from './user/UserIcons';
-import { Lock, Menu } from '@mui/icons-material';
-import { Button,IconButton } from '@mui/material'
-import Sidebar from './sidebar/Sidebar'
+import { Lock } from '@mui/icons-material';
+import { Button } from '@mui/material'
 
 
 const Navbar = () => {

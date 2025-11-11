@@ -1,4 +1,4 @@
-import React, { useState }  from 'react'
+import React from 'react'
 import 'aframe';
 import './css/Home.css';
 import SearchBar from "./SearchBar";
@@ -12,7 +12,6 @@ import Building from '../assets/builing.png';
 import CurlyLines from '../assets/curly-lines.svg';
 import Snake from '../assets/curly.png';
 import SnakeLeft from '../assets/curly-left.png';
-import Collage2 from '../assets/mid-left-img.png';
 
 import ImageComp360 from './ImageComp360';
 import ReligiousPlaces from './Religious';
