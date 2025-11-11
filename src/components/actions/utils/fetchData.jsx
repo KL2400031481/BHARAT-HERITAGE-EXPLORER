@@ -17,10 +17,14 @@ const fetchData = async (
       }
       return data.result;
     } catch (error) {
-      dispatch({
-        type: 'UPDATE_ALERT',
-        payload: { open: true, severity: 'error', message: error.message },
-      });
+      console.warn('API Error:', error.message);
+      // Only dispatch alert for non-connection errors
+      if (error.message !== 'Failed to fetch') {
+        dispatch({
+          type: 'UPDATE_ALERT',
+          payload: { open: true, severity: 'error', message: error.message },
+        });
+      }
       console.log(error);
       return null;
     }
