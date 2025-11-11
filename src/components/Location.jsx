@@ -11,7 +11,6 @@ import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import './css/location.css'
 import {useHistory} from 'react-router-dom';
-import { Marker} from 'react-maplibre-gl'
 import { useValue } from '../App'
 
 const Location = () => {
